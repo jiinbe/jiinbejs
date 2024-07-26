@@ -77,7 +77,7 @@ offset: {
 // top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
 // left: (setupOptions.width - (uploadedImage.width * scale)) / 1
 top: (100 - (uploadedImage.height * scale)) / 1,
-left: (600 - (uploadedImage.width * scale)) / 1
+left: (60 - (uploadedImage.width * scale)) / 1
 
 },
 scale: scale
