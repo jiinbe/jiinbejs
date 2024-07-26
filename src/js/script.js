@@ -53,10 +53,10 @@ if(this.files && this.files[0]) {
 statusElement.textContent = config.messages.uploading;
 			
 let uploadedImage = document.createElement('img');
-uploadedImage.setAttribute("width", "100");
-uploadedImage.setAttribute("height", "100");
-uploadedImage.style.top = "100px";
-uploadedImage.style.left = "60px";
+// uploadedImage.setAttribute("width", "100");
+// uploadedImage.setAttribute("height", "100");
+uploadedImage.setAttribute.style.top = "100px";
+uploadedImage.setAttribute.style.left = "60px";
 uploadedImage.src = URL.createObjectURL(this.files[0]);
 			
 uploadedImage.addEventListener('load', function() {
