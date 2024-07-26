@@ -108,8 +108,8 @@ mainElement.appendChild(downloadImageElement);
 statusElement.textContent = config.messages.status.done;
 
 // create downloadlink
-let downloadButtonElement = document.createElement('button');
-downloadButtonElement.classList.add("button");
+let downloadButtonElement = document.createElement('a');
+downloadButtonElement.classList.add("btn");
 downloadButtonElement.innerText = config.messages.buttons.download;
 downloadButtonElement.href = generator.render();
 downloadButtonElement.download = config.profilePictureName;
