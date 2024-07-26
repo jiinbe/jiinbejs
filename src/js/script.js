@@ -99,6 +99,7 @@ nextX += (logo.width * renderOptions.scale) + 10
 // set image url to blob
 let downloadImageElement = document.createElement('img');
 downloadImageElement.src = generator.render();
+downloadImageElement.setAttribute("alt", "JiinbeJS");
 mainElement.appendChild(downloadImageElement);
 
 statusElement.textContent = config.messages.status.done;
