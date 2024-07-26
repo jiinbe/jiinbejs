@@ -52,8 +52,6 @@ fileUploadElement.addEventListener('change', function() {
 if(this.files && this.files[0]) {
 statusElement.textContent = config.messages.uploading;
 
-statusElement.textContent = config.messages.create;
-
 let uploadedImage = document.createElement('img');
 uploadedImage.setAttribute("width", "200");
 uploadedImage.setAttribute("height", "200");
@@ -62,6 +60,9 @@ uploadedImage.src = URL.createObjectURL(this.files[0]);
 			
 uploadedImage.addEventListener('load', function() {
 statusElement.textContent = config.messages.status.processing;
+
+statusElement.textContent = config.messages.create;
+
 // create generator
 setupOptions = {
 width: overlayImageElement.width,
