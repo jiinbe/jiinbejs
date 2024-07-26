@@ -55,8 +55,8 @@ statusElement.textContent = config.messages.uploading;
 let uploadedImage = document.createElement('img');
 uploadedImage.setAttribute("width", "100");
 uploadedImage.setAttribute("height", "100");
-uploadedImage.setAttribute("top", "100");
-uploadedImage.setAttribute("left", "60");
+uploadedImage.style.top = 100;
+uploadedImage.style.left = 60;
 uploadedImage.src = URL.createObjectURL(this.files[0]);
 			
 uploadedImage.addEventListener('load', function() {
