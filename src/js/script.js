@@ -51,7 +51,9 @@ logoImageElements.push(element);
 fileUploadElement.addEventListener('change', function() {
 if(this.files && this.files[0]) {
 statusElement.textContent = config.messages.uploading;
-			
+
+statusElement.textContent = config.messages.create;
+
 let uploadedImage = document.createElement('img');
 uploadedImage.setAttribute("width", "200");
 uploadedImage.setAttribute("height", "200");
