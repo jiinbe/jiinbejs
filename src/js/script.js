@@ -27,6 +27,8 @@ let statusElement = document.createElement('p');
 statusElement.textContent = config.messages.status.startup;
 mainElement.appendChild(statusElement);
 
+statusElement.textContent = config.messages.create;
+
 let fileUploadElement = document.createElement('input');
 fileUploadElement.classList.add("custom-file-input");
 fileUploadElement.type = 'file';
@@ -60,8 +62,6 @@ uploadedImage.src = URL.createObjectURL(this.files[0]);
 			
 uploadedImage.addEventListener('load', function() {
 statusElement.textContent = config.messages.status.processing;
-
-statusElement.textContent = config.messages.create;
 
 // create generator
 setupOptions = {
