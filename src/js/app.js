@@ -5,8 +5,8 @@ width: 1080,
 height: 1080,
 backgroundColor: '#e7e7e7',
 offset: {
-top: 100,
-left: 60
+top: 0,
+left: 0
 },
 scale: 1
 };
