@@ -74,8 +74,11 @@ scale = Math.min(scale_width, scale_height);
     
 renderOptions = {
 offset: {
-top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
-left: (setupOptions.width - (uploadedImage.width * scale)) / 1
+// top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
+// left: (setupOptions.width - (uploadedImage.width * scale)) / 1
+top: (setupOptions.height - 100 / 1,
+left: (setupOptions.width - 60 / 1
+
 },
 scale: scale
 };
