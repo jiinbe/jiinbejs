@@ -53,8 +53,8 @@ if(this.files && this.files[0]) {
 statusElement.textContent = config.messages.uploading;
 			
 let uploadedImage = document.createElement('img');
-uploadedImage.setAttribute("width", "100");
-uploadedImage.setAttribute("height", "100");
+uploadedImage.setAttribute("width", "200");
+uploadedImage.setAttribute("height", "200");
 uploadedImage.src = URL.createObjectURL(this.files[0]);
 			
 uploadedImage.addEventListener('load', function() {
@@ -74,11 +74,8 @@ scale = Math.min(scale_width, scale_height);
     
 renderOptions = {
 offset: {
-// top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
-// left: (setupOptions.width - (uploadedImage.width * scale)) / 1
-top: (setupOptions.height - 100 / 1,
-left: (setupOptions.width - 60 / 1
-
+top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
+left: (setupOptions.width - (uploadedImage.width * scale)) / 1
 },
 scale: scale
 };
@@ -118,7 +115,7 @@ mainElement.appendChild(downloadButtonElement);
 mainElement.removeChild(fileUploadElement);
 
 let renewFormElement = document.createElement('button');
-renewFormElement.classList.add("red");
+renewFormElement.classList.add("button");
 renewFormElement.innerText = config.messages.buttons.newImage;
 renewFormElement.addEventListener('click', function(){
 generateElements();
