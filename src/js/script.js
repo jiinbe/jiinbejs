@@ -27,8 +27,6 @@ let statusElement = document.createElement('p');
 statusElement.textContent = config.messages.status.startup;
 mainElement.appendChild(statusElement);
 
-statusElement.textContent = config.messages.create;
-
 let fileUploadElement = document.createElement('input');
 fileUploadElement.classList.add("custom-file-input");
 fileUploadElement.type = 'file';
@@ -69,7 +67,9 @@ width: overlayImageElement.width,
 height: overlayImageElement.height
 }
 const generator = new Generator(setupOptions);
-				
+
+statusElement.textContent = config.messages.status.create;
+
 // calculate scaling of profile image
 scale_width = setupOptions.width / uploadedImage.width;
 scale_height = setupOptions.height / uploadedImage.height;
