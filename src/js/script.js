@@ -53,11 +53,8 @@ if(this.files && this.files[0]) {
 statusElement.textContent = config.messages.uploading;
 			
 let uploadedImage = document.createElement('img');
-uploadedImage.setAttribute("width", "100");
-uploadedImage.setAttribute("height", "100");
-uploadedImage.setAttribute("alt", "JiinbeJS");
-uploadedImage.style.top = 100;
-uploadedImage.style.left = 60;
+uploadedImage.setAttribute("width", "200");
+uploadedImage.setAttribute("height", "200");
 uploadedImage.src = URL.createObjectURL(this.files[0]);
 			
 uploadedImage.addEventListener('load', function() {
@@ -77,11 +74,8 @@ scale = Math.min(scale_width, scale_height);
     
 renderOptions = {
 offset: {
-// top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
-// left: (setupOptions.width - (uploadedImage.width * scale)) / 1
-top: (setupOptions.height - (uploadedImage.height * scale)) / 2,
-left: (setupOptions.width - (uploadedImage.width * scale)) / 2
-
+top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
+left: (setupOptions.width - (uploadedImage.width * scale)) / 1
 },
 scale: scale
 };
