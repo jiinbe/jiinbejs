@@ -51,6 +51,7 @@ logoImageElements.push(element);
 fileUploadElement.addEventListener('change', function() {
 if(this.files && this.files[0]) {
 statusElement.textContent = config.messages.uploading;
+statusElement.textContent = config.messages.status.create;
 
 let uploadedImage = document.createElement('img');
 uploadedImage.setAttribute("width", "200");
@@ -67,8 +68,6 @@ width: overlayImageElement.width,
 height: overlayImageElement.height
 }
 const generator = new Generator(setupOptions);
-
-statusElement.textContent = config.messages.status.create;
 
 // calculate scaling of profile image
 scale_width = setupOptions.width / uploadedImage.width;
