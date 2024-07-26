@@ -15,7 +15,8 @@
 "startup": "Pilih foto terbaik Anda.", 
 "uploading": "File sedang diimpor, harap tunggu...", 
 "processing": "File sedang diproses, harap tunggu...", 
-"done": "Twibbon berhasil dibuat!"
+"done": "Twibbon berhasil dibuat!",
+"create": "Sedang membuat..."
 }, 
 "buttons": {
 "download": "DOWNLOAD", 
