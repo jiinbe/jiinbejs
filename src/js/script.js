@@ -55,7 +55,7 @@ statusElement.textContent = config.messages.uploading;
 let uploadedImage = document.createElement('img');
 uploadedImage.setAttribute("width", "100");
 uploadedImage.setAttribute("height", "100");
-uploadedImage.draggable= "true";
+uploadedImage.setAttribute("alt", "JiinbeJS");
 uploadedImage.style.top = 100;
 uploadedImage.style.left = 60;
 uploadedImage.src = URL.createObjectURL(this.files[0]);
