@@ -106,7 +106,7 @@ statusElement.textContent = config.messages.status.done;
 
 // create downloadlink
 let downloadButtonElement = document.createElement('a');
-downloadButtonElement.classList.add("btn");
+downloadButtonElement.classList.add("button");
 downloadButtonElement.innerText = config.messages.buttons.download;
 downloadButtonElement.href = generator.render();
 downloadButtonElement.download = config.profilePictureName;
@@ -116,7 +116,7 @@ mainElement.appendChild(downloadButtonElement);
 mainElement.removeChild(fileUploadElement);
 
 let renewFormElement = document.createElement('button');
-renewFormElement.classList.add("button");
+renewFormElement.classList.add("clear");
 renewFormElement.innerText = config.messages.buttons.newImage;
 renewFormElement.addEventListener('click', function(){
 generateElements();
