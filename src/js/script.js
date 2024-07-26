@@ -76,8 +76,8 @@ renderOptions = {
 offset: {
 // top: (setupOptions.height - (uploadedImage.height * scale)) / 1,
 // left: (setupOptions.width - (uploadedImage.width * scale)) / 1
-top: (setupOptions.height - (uploadedImage.height * scale)) / 100,
-left: (setupOptions.width - (uploadedImage.width * scale)) / 60
+top: (setupOptions.height - (uploadedImage.height * scale)) / 2,
+left: (setupOptions.width - (uploadedImage.width * scale)) / 2
 
 },
 scale: scale
