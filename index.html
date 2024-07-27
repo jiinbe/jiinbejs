@@ -34,59 +34,38 @@ width: 100%;
 margin-bottom: 1rem;
 }
 
-.button, button {
-display: inline-block;
-position: relative;
-outline: 0;
-color: #aaa;
-background: #fff;
-text-align: center;
+.atk-button {
+color: #757575;
+border-color: #ccc;
+font-size: 14px;
+padding: 8px 20px;
+border-radius: 3px;
+background: #DCDBDC;
+transition: all ease-in-out 0.3s;
 text-decoration: none;
-cursor: pointer;
-white-space: nowrap;
-letter-spacing: -0.02em;
-font-weight: 400;
-font-style: normal;
-padding: 0 10px;
-height: 32px;
-line-height: 30px;
-transition: 0.2s all;
+border: 0;
 }
 
-.btn {
-display: inline-block;
-position: relative;
-outline: 0;
-color: #aaa;
-background: #fff;
-text-align: center;
-text-decoration: none;
-cursor: pointer;
-white-space: nowrap;
-letter-spacing: -0.02em;
-font-weight: 400;
-font-style: normal;
-padding: 0 10px;
-height: 32px;
-line-height: 30px;
-transition: 0.2s all;
-border: 1px #d8d8d8 solid;
-}
-
-.btn:hover, .btn.active {
-color: #999;
-border-color: #bbb;
-}
-
-.red {
-color: #FFA581;
-border: 1px #FFA581 solid;
-}
-
-.red:hover, .red.active {
+.atk-button--orange {
+background: #F2533A;
 color: #fff;
-background: #FFA581;
 }
+  
+.atk-button--orange:hover {
+color: #fff;
+background: #ea2d0f;
+}
+
+.atk-button--grey {
+background: #1D2024;
+color: #fff;
+}
+  
+.atk-button--grey:hover {
+color: #fff;
+background: #060708;
+}
+  
 input {
 display: inline-block;
 width: 100%;
