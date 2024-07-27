@@ -109,7 +109,7 @@ statusElement.textContent = config.messages.status.done;
 
 // create downloadlink
 let downloadButtonElement = document.createElement('a');
-downloadButtonElement.classList.add("button");
+downloadButtonElement.classList.add("button gray");
 downloadButtonElement.innerText = config.messages.buttons.download;
 downloadButtonElement.href = generator.render();
 downloadButtonElement.download = config.profilePictureName;
